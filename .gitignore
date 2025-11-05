@@ -1,2 +1,7 @@
-"QuizApp/BE/.env" 
-"QuizApp/BE/.env" 
+MONGO_URI=mongodb+srv://30379_db_user:36kXhouUNafsu91t@cluster0.e36be8w.mongodb.net/quiz_app?retryWrites=true&w=majority
+
+
+PORT=5000
+JWT_SECRET=f19e4739ea356a14c6c807cda9fd865e768358a8420c
+>>>>>>> b8e4c10 (second)
+JWT_EXPIRES_IN=7d
