@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2575fc;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-btn {
+  background-color: #ff4d4f;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 1.6em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide all links by default on mobile */
+  .nav-links-left,
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2575fc;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* When menu is open */
+  .nav-links-left.open,
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .nav-links-left a,
+  .navbar-right a,
+  .logout-btn {
+    padding: 8px 0;
+  }
+}
